@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html ng-app="pizza">
+<head>
+    <title>Pizza Mania!</title>
+    <!--Fit the scaling for the mobile device-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="assests/css/site.css" rel="stylesheet" />
+    <link href="app/components/toppings/toppings.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular-route.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.12.1/ui-bootstrap-tpls.min.js"></script>
+     <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.6.0.js"></script>
+</head>
+<h1 id="header">
+    <img ng-src="http://images.clipartpanda.com/pizza-party-clipart-pizza.jpg" alt="Alternate Text" class="img-circle" />
+</h1>
+
+<body>
+  <div id="center">
+      <a class="btn btn-primary" href= "#/pizza">List Pizzas</a>
+      <a class="btn btn-primary" href= "#/toppings/list">List Toppings</a>
+      <a class="btn btn-primary" href= "#/pizza/create">Create New Pizza</a>
+      <a class="btn btn-primary" href= "#/toppings/create">Create Toppings</a>
+  </div>
+  <div class="row">&nbsp;</div>
+
+  <div class="container" ng-view></div>
+
+  <script src="app/app.js"></script>
+  <script src="app/config.js"></script>
+  <script src="app/components/pizza/pizza.js"></script>
+  <script src="app/components/toppings/toppings.js"></script>
+  <script src="app/components/toppings/addPizzaToppings.js"></script>
+  <script src="app/components/pizza/createPizza.js"></script>
+  <script src="app/components/toppings/createToppings.js"></script>
+</body>
+</html>

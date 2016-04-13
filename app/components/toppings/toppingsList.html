@@ -1,0 +1,14 @@
+<table class="table table-stripped table-bordered table-hover" ng-show="toppings.length">
+    <thead title="Available Toppings">
+        <tr>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr data-ng-repeat="topping in toppings">
+            <td>
+                {{ topping.name}}
+            </td>
+        </tr>
+    </tbody>
+</table>

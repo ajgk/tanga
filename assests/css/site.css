@@ -1,0 +1,11 @@
+﻿#center {
+    text-align: center;
+}
+
+#header img {
+    width: 100px;
+    margin-bottom: 10px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}

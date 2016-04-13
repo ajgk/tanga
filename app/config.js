@@ -1,0 +1,1 @@
+﻿var SERVICE_BASE = 'https://pizzaserver.herokuapp.com/';

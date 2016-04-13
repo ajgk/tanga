@@ -1,0 +1,26 @@
+ <form class="form-horizontal">
+      <div class="control-group form-horizontal">
+	    <label for="pizzaName">Pizza Name</label>
+	    <input type="text" class="form-control" id="pizzaName" ng-model="pizzaItem.name" ng-readonly="true">
+      </div>
+      <div class="control-group">
+	    <label for="pizzaDescription">Description</label>
+	    <input type="text" class="form-control" id="pizzaDescription" ng-model="pizzaItem.description" ng-readonly="true">
+      </div>
+      <div class="control-group">
+	    <label for="pizzaToppings">Existing Toppings</label>
+	    <input type="text" class="form-control" id="pizzaToppings" ng-model="pizzaItem.toppings" ng-readonly="true">
+      </div>
+      <div class="control-group">
+		<label for="toppings"> Select a toppings and click submit: </label><br>
+		<select class="form-control" id="toppings" name="toppings" ng-model="selected" ng-options="topping.id as topping.name for topping in toppings" required>
+		<option value="">Add a topping&hellip;</option>
+		</select>
+      </div>
+
+      <div class="control-group">
+          <div class="controls">
+              <button class="btn btn-large btn-primary" type="button" ng-click="addToppingToPizza(pizzaItem)">Submit</button>
+          </div>
+      </div>
+  </form>
